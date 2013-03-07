@@ -1,0 +1,55 @@
+<link rel="stylesheet" type="text/css" href="bootstrap.css">
+<script type="text/javascript" src="bracket.js"></script>
+<style type="text/css">
+td,th{
+	text-align: left;
+}
+a.main{
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+</style>
+<a href="/index.html" class="main">See Status</a>
+<center><h1>Schedule - Round 1</h1></center>
+<center>
+	<table class='table table-bordered table-hover' style="width:80%">
+		<tbody id='table'>
+			<tr>
+				<th>Match No.</th>
+				<th>Player - 1 </th>
+				<th>Player - 2</th>
+				<th>Date</th>
+				<th>Winner</th>
+			</tr>
+		</tbody>
+	</table>
+</center>
+<script type="text/javascript">
+count = 1
+
+for(r1 in bracket.winners)
+	for(r2 in bracket.winners[r1].winners)
+		for(r3 in bracket.winners[r1].winners[r2].winners)
+			for(r4 in bracket.winners[r1].winners[r2].winners[r3].winners){
+				var p1=bracket.winners[r1].winners[r2].winners[r3].winners[r4].winners[0],
+						p2=bracket.winners[r1].winners[r2].winners[r3].winners[r4].winners[1],
+						flag=0;
+				if(p1.winners) {
+					document.getElementById('table').innerHTML += "<tr><td>"+(count++)+"</td><td>"+p1.winners[0].name+"</td><td>"+p1.winners[1].name+"</td><td>"+p1.date+"</td><td>"+(p1.win||"--")+"</td></tr>";
+					flag+=1;
+				}
+				if(p2.winners) {
+					document.getElementById('table').innerHTML += "<tr><td>"+(count++)+"</td><td>"+p2.winners[0].name+"</td><td>"+p2.winners[1].name+"</td><td>"+p2.date+"</td><td>"+(p2.win||"--")+"</td></tr>";
+					flag+=1;
+				}
+				if(flag!=2)
+					document.getElementById('table').innerHTML += "<tr><td>"+(count++)+"</td><td>"+p1.name+"</td><td>"+p2.name+"</td><td>"+bracket.winners[r1].winners[r2].winners[r3].winners[r4].date+"</td><td>"+(bracket.winners[r1].winners[r2].winners[r3].winners[r4].win||"--")+"</td></tr>";
+		}
+
+</script>
