@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <title>Node-Link Tree</title>
-    <script src="http://mbostock.github.com/d3/d3.v2.js"></script>
+    <script src="d3.v2.js"></script>
     <script type="text/javascript" src="bracket.js"></script>
     <style type="text/css">
 
@@ -28,13 +28,15 @@ path.link {
     </style>
   </head>
   <body>
+    <center><h2>Indix Table Tennis - Summer Cup</h2>
+      <img src="cup.jpg"></center>
     <div id="chart"></div>
     <script type="text/javascript">
 
 var margin = {top: 30, right: 10, bottom: 10, left: 10},
     width = 1300 - margin.left - margin.right,
     halfWidth = width -150,
-    height = 600 - margin.top - margin.bottom,
+    height = 3500 - margin.top - margin.bottom,
     i = 0,
     duration = 500,
     root;
@@ -90,8 +92,8 @@ var vis = d3.select("#chart").append("svg")
 // d3.json("bracket.json", function(json) {
   json = bracket;
   root = json;
-  root.x0 = height / 2;
-  root.y0 = width / 2;
+  root.x0 = height ;
+  root.y0 = width ;
   
   var t1 = d3.layout.tree().size([height, halfWidth]).children(function(d){return d.winners;}),
       t2 = d3.layout.tree().size([height, halfWidth]).children(function(d){return d.challengers;});
@@ -140,7 +142,7 @@ function update(source) {
 
  nodeEnter.append("image")
       .attr("class", "circle")
-      .attr("xlink:href", function(d){console.log(d.name); return "employee_list/0004 SatyaKaliki.jpg"})
+      .attr("xlink:href", function(d){ return imagesList[d.name]})
       .attr("x", -25)
       .attr("y", -25)
       .attr("width", 40)
