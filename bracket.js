@@ -10,7 +10,7 @@ bracket = {
                   "name": "round-3",
                   "winners": [{
                       "name": "round-2",
-                      "date": "nalaiku",
+                      "date": "xx-03-2013",
                       "winners": [{
                           "name": "Arun_Buduri",
                         },
