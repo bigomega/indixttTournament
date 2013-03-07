@@ -1,0 +1,28 @@
+<link rel="stylesheet" type="text/css" href="">
+<script type="text/javascript" src="bracket.js"></script>
+<center><h1>Schedule - Round 1</h1></center>
+<center>
+	<table class='table table-bordered table-hover' id='table' style="width:80%">
+		<th>
+			<td>No.</td>
+			<td>Player - 1 </td>
+			<td>Player - 2</td>
+			<td>Date</td>
+			<td>Winner</td>
+		</th>
+	</table>
+</center>
+<script type="text/javascript">
+count = 1
+
+for(r1 in bracket.winners)
+	for(r2 in bracket.winners[r1].winners)
+		for(r3 in bracket.winners[r1].winners[r2].winners)
+			for(r4 in bracket.winners[r1].winners[r2].winners[r3].winners){
+				p1=bracket.winners[r1].winners[r2].winners[r3].winners[r4].winners[0].name;
+				p2=bracket.winners[r1].winners[r2].winners[r3].winners[r4].winners[1].name;
+				if(p1.indexOf('round')!=-1||p2.indexOf('round')!=-1) continue;
+				document.getElementById('table').innerHTML += "<tr><td>"+(count++)+"</td><td>"+p1+"</td><td>"+p2+"</td><td>"+bracket.winners[r1].winners[r2].winners[r3].winners[r4].date+"</td><td></td><td></tr>";
+		}
+
+</script>
