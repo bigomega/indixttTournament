@@ -15,7 +15,7 @@ bracket = {
                           "name": "Arun_Buduri",
                         },
                         {
-                          "name": "Arun"
+                          "name": "Zahoor"
                         }]
                     },
                     {
@@ -36,7 +36,7 @@ bracket = {
                           "name": "Prem",
                         },
                         {
-                          "name": "Zahoor"
+                          "name": "Arun"
                         }]
                     },
                     {

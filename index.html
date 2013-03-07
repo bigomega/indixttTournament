@@ -22,6 +22,12 @@
   font-weight: bold;
 }
 
+.node text.date {
+  font-weight: normal;
+  fill: #66F;
+  font-size: 16px;
+}
+
 path.link {
   fill: none;
   stroke: #ccc;
@@ -41,7 +47,7 @@ a.schedule{
     </style>
   </head>
   <body>
-    <a href="/schedule.html" class="schedule">See Schedule</a>
+    <a href="/schedule.html" class="schedule">See Table</a>
     <center><h2>Indix Table Tennis - Summer Cup</h2>
       <img src="cup.jpg"</center>
     <div id="chart"></div>
@@ -168,6 +174,11 @@ function update(source) {
       .attr("y", 35)
       .text(function(d) { return d.name; })
       .style("fill-opacity", 1e-6);
+
+  nodeEnter.append("text")
+    .attr('x', -120)
+    .attr('class', 'date')
+    .text(function(d) { return d.date||'';});
 
   // Transition nodes to their new position.
   var nodeUpdate = node.transition()
