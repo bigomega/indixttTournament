@@ -7,7 +7,7 @@
     <script type="text/javascript" src="bracket.js"></script>
     <style type="text/css">
 
-.node circle {
+.node .circle {
   cursor: pointer;
   fill: #fff;
   stroke: steelblue;
@@ -15,7 +15,8 @@
 }
 
 .node text {
-  font: 10px sans-serif;
+  font: 15px sans-serif;
+  font-weight: bold;
 }
 
 path.link {
@@ -31,9 +32,9 @@ path.link {
     <script type="text/javascript">
 
 var margin = {top: 30, right: 10, bottom: 10, left: 10},
-    width = 960 - margin.left - margin.right,
-    halfWidth = width / 2,
-    height = 500 - margin.top - margin.bottom,
+    width = 1300 - margin.left - margin.right,
+    halfWidth = width -150,
+    height = 600 - margin.top - margin.bottom,
     i = 0,
     duration = 500,
     root;
@@ -83,7 +84,7 @@ var calcLeft = function(d){
 var vis = d3.select("#chart").append("svg")
     .attr("width", width + margin.right + margin.left)
     .attr("height", height + margin.top + margin.bottom)
-  .append("g")
+    .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 // d3.json("bracket.json", function(json) {
@@ -108,15 +109,15 @@ var vis = d3.select("#chart").append("svg")
 
 function update(source) {
 
-var toArray = function(item, arr){
-  arr = arr || [];
-  var i = 0, l = item.children?item.children.length:0;
-  arr.push(item);
-  for(; i < l; i++){
-    toArray(item.children[i], arr);
-  }
-  return arr;
-};
+  var toArray = function(item, arr){
+    arr = arr || [];
+    var i = 0, l = item.children?item.children.length:0;
+    arr.push(item);
+    for(; i < l; i++){
+      toArray(item.children[i], arr);
+    }
+    return arr;
+  };
   // Compute the new tree layout.
   var nodes = toArray(source);
 
@@ -130,16 +131,25 @@ var toArray = function(item, arr){
   // Enter any new nodes at the parent's previous position.
   var nodeEnter = node.enter().append("g")
       .attr("class", "node")
-      .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
+      .attr("transform", function(d) {return "translate(" + source.y0 + "," + source.x0 + ")"; })
       .on("click", click);
 
-  nodeEnter.append("circle")
-      .attr("r", 1e-6)
-      .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+  // nodeEnter.append("circle")
+  //     .attr("r", 1e-6)
+  //     .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+
+ nodeEnter.append("image")
+      .attr("class", "circle")
+      .attr("xlink:href", function(d){console.log(d.name); return "employee_list/0004 SatyaKaliki.jpg"})
+      .attr("x", -25)
+      .attr("y", -25)
+      .attr("width", 40)
+      .attr("height", 40);
 
   nodeEnter.append("text")
       .attr("dy", function(d) { return d.isRight?14:-8;})
       .attr("text-anchor", "middle")
+      .attr("y", 35)
       .text(function(d) { return d.name; })
       .style("fill-opacity", 1e-6);
 
@@ -150,7 +160,7 @@ var toArray = function(item, arr){
       ;
 
   nodeUpdate.select("circle")
-      .attr("r", 4.5)
+      .attr("r", 30)
       .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
 
   nodeUpdate.select("text")
