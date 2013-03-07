@@ -57,10 +57,10 @@ bracket = {
                 {
                   "name": "round-3",
                   "winners": [{
-                      "name": "round-2"
+                      "name": "Thiru"
                     },
                     {
-                      "name": "round-2"
+                      "name": "Roshan"
                     }]
                 }]
             }]
@@ -73,19 +73,19 @@ bracket = {
               "winners": [{
                   "name": "round-3",
                   "winners": [{
-                      "name": "round-2"
+                      "name": "Abishek"
                     },
                     {
-                      "name": "round-2"
+                      "name": "Karthika"
                     }]
                 },
                 {
                   "name": "round-3",
                   "winners": [{
-                      "name": "round-2"
+                      "name": "Vasanth"
                     },
                     {
-                      "name": "round-2"
+                      "name": "Sridhar"
                     }]
                 }]
             },
@@ -94,19 +94,19 @@ bracket = {
               "winners": [{
                   "name": "round-3",
                   "winners": [{
-                      "name": "round-2"
+                      "name": "Bharath"
                     },
                     {
-                      "name": "round-2"
+                      "name": "Arul"
                     }]
                 },
                 {
                   "name": "round-3",
                   "winners": [{
-                      "name": "round-2"
+                      "name": "Rajesh"
                     },
                     {
-                      "name": "round-2"
+                      "name": "Srikanth"
                     }]
                 }]
             }]
@@ -122,19 +122,19 @@ bracket = {
               "winners": [{
                   "name": "round-3",
                   "winners": [{
-                      "name": "round-2"
+                      "name": "Ashwanth"
                     },
                     {
-                      "name": "round-2"
+                      "name": "Bhavna"
                     }]
                 },
                 {
                   "name": "round-3",
                   "winners": [{
-                      "name": "round-2"
+                      "name": "Sanjay"
                     },
                     {
-                      "name": "round-2"
+                      "name": "Venkatesh"
                     }]
                 }]
             },
@@ -143,19 +143,19 @@ bracket = {
               "winners": [{
                   "name": "round-3",
                   "winners": [{
-                      "name": "round-2"
+                      "name": "Jeevan"
                     },
                     {
-                      "name": "round-2"
+                      "name": "Aruna"
                     }]
                 },
                 {
                   "name": "round-3",
                   "winners": [{
-                      "name": "round-2"
+                      "name": "Anirudh"
                     },
                     {
-                      "name": "round-2"
+                      "name": "Mayank"
                     }]
                 }]
             }]
@@ -167,19 +167,19 @@ bracket = {
               "winners": [{
                   "name": "round-3",
                   "winners": [{
-                      "name": "round-2"
+                      "name": "Sriram"
                     },
                     {
-                      "name": "round-2"
+                      "name": "Satya"
                     }]
                 },
                 {
                   "name": "round-3",
                   "winners": [{
-                      "name": "round-2"
+                      "name": "Jonah"
                     },
                     {
-                      "name": "round-2"
+                      "name": "Manoj"
                     }]
                 }]
             },
@@ -188,19 +188,19 @@ bracket = {
               "winners": [{
                   "name": "round-3",
                   "winners": [{
-                      "name": "round-2"
+                      "name": "Rajesh_Mupalla"
                     },
                     {
-                      "name": "round-2"
+                      "name": "Sandipan"
                     }]
                 },
                 {
                   "name": "round-3",
                   "winners": [{
-                      "name": "round-2"
+                      "name": "Archanaa"
                     },
                     {
-                      "name": "round-2"
+                      "name": "Pranesh"
                     }]
                 }]
             }]
@@ -218,13 +218,13 @@ bracket = {
     "round-3": "empty_profile.gif",
     "round-4": "empty_profile.gif",
     "Sanjay": "employee_list/0001 - SanjayParthasarathy.jpg",
-    Satya: "employee_list/employee_list/0004 SatyaKaliki.jpg",
+    Satya: "employee_list/0004 SatyaKaliki.jpg",
     Jonah: "employee_list/0003 Jonah.jpg",
-    Rajesh: "employee_list/0005 RajeshMupalla.jpg",
+    Rajesh_Mupalla: "employee_list/0005 RajeshMupalla.jpg",
     Srikanth: "employee_list/0006 Srikanth.jpg",
     Praveen: "employee_list/0008 Praveen.jpg",
     Anirudh: "employee_list/0009 Anirudh.jpg",
-    RajeshManikka: "employee_list/0010 RajeshManikka.jpg",
+    Rajesh: "employee_list/0010 RajeshManikka.jpg",
     Sriram: "employee_list/0011 Sriram.jpg",
     Prem: "employee_list/0012 prem.jpg",
     Kishore: "employee_list/0013 kishore.jpg",
@@ -233,7 +233,7 @@ bracket = {
     Aruna: "employee_list/0016 Aruna.jpg",
     Sandipan: "employee_list/0017 Sandipan.jpg",
     Ashwanth: "employee_list/0019 Ashwanth_FTE.jpg",
-    vasanth: "employee_list/0021 vasanth.jpg",
+    Vasanth: "employee_list/0021 vasanth.jpg",
     Jeevan: "employee_list/0022 Jeevan.jpg",
     Thiru: "employee_list/0023 Thiru.jpg",
     Arun: "employee_list/0024 Arun kumar.jpg",
