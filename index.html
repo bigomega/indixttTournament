@@ -2,12 +2,14 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <title>Node-Link Tree</title>
+    <title>Indix Summer Cup</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
     <script src="d3.v2.js"></script>
     <script type="text/javascript" src="bracket.js"></script>
     <style type="text/css">
-.body{
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+body{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
 }
 
 .node .circle {
@@ -36,21 +38,59 @@ path.link {
 
 a.schedule{
   position: fixed;
-  right: 10px;
-  top: 10px;
+  right: -10px;
+  top: 50%;
   text-decoration: none;
   font-size: 25px;
-  padding: 5px;
-  background-color: #ddd;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.2);
   border-radius: 5px;
+  padding-right: 46px;
+  box-shadow: 8px 5px 10px #000;
+}
+
+h2,h2 a,h2 span{
+  color: rgba(0,0,0,0);
+  text-shadow: 0px 0px 2px rgb(0, 0, 0), 0px 0px 5px rgb(151, 160, 51);
+}
+
+h2 span.ind{
+  text-shadow: 0px 0px 1px rgb(10, 0, 255), 0px 0px 5px rgb(0, 184, 255);
+}
+h2 span.ix{
+  text-shadow: 0px 0px 2px rgb(31, 255, 0), 0px 0px 5px rgb(235, 255, 0);
+}
+h2 span.season{
+text-shadow: 0px 0px 1px rgb(255, 214, 0), 0px 0px 5px rgb(0, 163, 255);
+}
+img.cupl{
+  position: absolute;
+  left: 0px;
+}
+img.cupr{
+  position: absolute;
+  right: 0px;
+}
+
+#chart{
+  background-color: #eee;
+}
+
+footer{
+  padding-top: 10px;
+  padding-bottom: 100px
 }
     </style>
   </head>
   <body>
     <a href="/indixttTournament/schedule.html" class="schedule">See Table</a>
-    <center><h2>Indix Table Tennis - Summer Cup</h2>
-      <img src="cup.jpg"</center>
+    <img src="cup.jpg" class="cupl" width="130px"/>
+    <img src="cup.jpg" class="cupr" width="130px"/>
+    <center><h2><a href="http://indix.com"><span class="ind">Ind</span><span class="ix">ix</span></a> Table Tennis Tournament<br><span class="season">Summer Cup</span></h2>
+      </center>
     <div id="chart"></div>
+    <center><footer><a href="http://indix.com">indix</a> &copy;<br><br></footer></center>
     <script type="text/javascript">
 
 var margin = {top: 30, right: 10, bottom: 10, left: 10},
@@ -172,6 +212,7 @@ function update(source) {
       .attr("dy", function(d) { return d.isRight?14:-8;})
       .attr("text-anchor", "middle")
       .attr("y", 35)
+      .attr("class", function(d){ return d.class||'';})
       .text(function(d) { return d.name; })
       .style("fill-opacity", 1e-6);
 
