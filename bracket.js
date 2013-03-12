@@ -148,7 +148,7 @@ bracket = {
                       "name": "Ashwanth"
                     },
                     {
-                      "name": "Bhavna"
+                      "name": "Bhawna"
                     }]
                 },
                 {
@@ -284,7 +284,7 @@ bracket = {
     Abishek: "employee_list/abishek.jpg",
     Arul: "employee_list/arul.jpg",
     Bharath: "employee_list/Barath.jpg",
-    Bhavna: "employee_list/Bhavna.jpg",
+    Bhawna: "employee_list/Bhavna.jpg",
     Sridhar: "employee_list/Sridhar.png"
 
   }
