@@ -6,15 +6,22 @@ td,th{
 }
 a.main{
   position: fixed;
-  right: -10px;
+  right: -120px;
   top: 10px;
   text-decoration: none;
   font-size: 25px;
   padding: 10px;
-  background-color: #ddd;
+  border: 1px solid rgba(0,0,0,0.2);
   border-radius: 5px;
   padding-right: 46px;
   box-shadow: 8px 5px 10px #000;
+	transition: right 0.5s;
+	-moz-transition: right 0.5s; /* Firefox 4 */
+	-webkit-transition: right 0.5s; /* Safari and Chrome */
+	-o-transition: right 0.5s; /* Opera */
+}
+a.main:hover{
+	right: -10px;
 }
 .thead th{
 	background-color: #d9edf7;
