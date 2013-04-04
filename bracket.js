@@ -11,8 +11,10 @@ bracket = {
               "name": "quarterFinalists",
                   "date": "19-04-2013",
               "winners": [{
-                  "name": "Zahoor",
-                  "date": "18-04-2013"
+                  "name": "round-3",
+                  "date": "18-04-2013",
+                  "winners": [{
+                      "name": "Zahoor"
                     },
                     {
                       "name": "Satya",
