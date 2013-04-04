@@ -11,20 +11,11 @@ bracket = {
               "name": "quarterFinalists",
                   "date": "19-04-2013",
               "winners": [{
-                  "name": "round-3",
-                  "date": "18-04-2013",
-                  "winners": [{
-                      "name": "round-2",
-                      "date": "19-03-2013",
-                      "winners": [{
-                          "name": "Arun_Buduri",
-                        },
-                        {
-                          "name": "Zahoor"
-                        }]
+                  "name": "Zahoor",
+                  "date": "18-04-2013"
                     },
                     {
-                      "name": "round-2",
+                      "name": "Satya",
                       "date": "20-03-2013",
                       "winners": [{
                           "name": "Satya",
@@ -35,10 +26,10 @@ bracket = {
                     }]
                 },
                 {
-                  "name": "round-3",
+                  "name": "Praveen",
                     "date": "22-03-2013",
                   "winners": [{
-                      "name": "round-2",
+                      "name": "Arun",
                       "date": "21-03-2013",
                       "winners": [{
                           "name": "Prem",
@@ -66,7 +57,7 @@ bracket = {
                     }]
                 },
                 {
-                  "name": "round-3",
+                  "name": "Roshan",
                     "date": "27-03-2013",
                   "winners": [{
                       "name": "Thiru"
@@ -91,7 +82,7 @@ bracket = {
                       "name": "Abishek"
                     },
                     {
-                      "name": "Karthika"
+                      "name": "Arun_Buduri"
                     }]
                 },
                 {
@@ -152,7 +143,7 @@ bracket = {
                     }]
                 },
                 {
-                  "name": "round-3",
+                  "name": "Venkatesh",
                     "date": "5-04-2013",
                   "winners": [{
                       "name": "Sanjay"
@@ -169,10 +160,10 @@ bracket = {
                   "name": "round-3",
                     "date": "9-04-2013",
                   "winners": [{
-                      "name": "Jeevan"
+                      "name": "Sriram"
                     },
                     {
-                      "name": "Aruna"
+                      "name": "Vinoth"
                     }]
                 },
                 {
@@ -197,10 +188,10 @@ bracket = {
                   "name": "round-3",
                     "date": "11-04-2013",
                   "winners": [{
-                      "name": "Sriram"
+                      "name": "Jeevan"
                     },
                     {
-                      "name": "Vinoth"
+                      "name": "Aruna"
                     }]
                 },
                 {
