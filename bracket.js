@@ -49,13 +49,13 @@ bracket = {
               "name": "quarterFinalists",
               "date": "23-04-2013",
               "winners": [{
-                  "name": "round-3",
+                  "name": "Arun_Buduri",
                     "date": "26-03-2013",
                   "winners": [{
-                      "name": "Kishore"
+                      "name": "Abishek"
                     },
                     {
-                      "name": "Pratik"
+                      "name": "Arun_Buduri"
                     }]
                 },
                 {
@@ -81,10 +81,10 @@ bracket = {
                   "name": "round-3",
                     "date": "28-03-2013",
                   "winners": [{
-                      "name": "Abishek"
+                      "name": "Kishore"
                     },
                     {
-                      "name": "Arun_Buduri"
+                      "name": "Pratik"
                     }]
                 },
                 {
@@ -102,7 +102,7 @@ bracket = {
               "name": "quarterFinalists",
               "date": "25-04-2013",
               "winners": [{
-                  "name": "round-3",
+                  "name": "Bharath",
                     "date": "2-04-2013",
                   "winners": [{
                       "name": "Bharath"
@@ -135,7 +135,7 @@ bracket = {
               "name": "quarterFinalists",
               "date": "26-04-2013",
               "winners": [{
-                  "name": "round-3",
+                  "name": "Ashwanth",
                     "date": "4-04-2013",
                   "winners": [{
                       "name": "Ashwanth"
@@ -159,7 +159,7 @@ bracket = {
               "name": "quarterFinalists",
               "date": "30-04-2013",
               "winners": [{
-                  "name": "round-3",
+                  "name": "Sriram",
                     "date": "9-04-2013",
                   "winners": [{
                       "name": "Sriram"
@@ -169,7 +169,7 @@ bracket = {
                     }]
                 },
                 {
-                  "name": "round-3",
+                  "name": "Anirudh",
                     "date": "10-04-2013",
                   "winners": [{
                       "name": "Anirudh"
